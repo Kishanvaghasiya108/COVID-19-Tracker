@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: red;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
+  list-style: none;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin: 1rem;
+  padding: 2rem;
+  width: calc(25% - 2rem);
+}
+ul :hover{
+  background-color: blanchedalmond;
+  font-size: x-large;
+  font-weight: bolder;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.card__name {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card__name span {
+  color: red;
+  font-size: small;
+}
+
+.card__total {
+  font-size: 60rem;
+  font-weight: bold;
+  text-align: center;
+  font-weight: bolder;
+  margin-left: 20px;
+}
+
+.card__total:before {
+  content: "Total: ";
+  display: block;
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+    width: 100%;
   }
 }
